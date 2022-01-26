@@ -409,6 +409,11 @@ img {
     margin: auto;
   }
 }
+@media only screen and (max-width: 767px) {
+  .mv-form {
+    padding: 20px 15px;
+  }
+}
 
 .sec_box {
   padding: 90px 0;
@@ -416,6 +421,7 @@ img {
 .sec-title {
   text-align: center;
   font-size: 24px;
+  font-weight: bold;
   margin: 0 0 50px;
   text-transform: uppercase;
 }
@@ -441,7 +447,7 @@ img {
   margin: 0 0 15px;
 }
 .sec_box .list-box .box-item .it-txt {
-  font-size: 27px;
+  font-size: 26px;
   font-weight: bold;
   text-align: left;
   display: inline-block;
@@ -474,6 +480,19 @@ img {
 }
 .btn-style-01:hover {
   background: #f4b802;
+  color: #523b00;
+}
+@media only screen and (max-width: 767px) {
+  .sec_box {
+    padding: 40px 0;
+  }
+  .sec_box .list-box .box-item {
+    width: 100%;
+  }
+  .sec-title {
+    font-size: 18px;
+    margin: 0 0 30px;
+  }
 }
 
 /* .sec_step {
