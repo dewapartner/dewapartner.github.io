@@ -236,7 +236,7 @@ img {
     left: -40px;
   }
   .btn-menu .icon {
-    fill: #ffffff;
+    fill: #f4b802;
     font-size: 30px;
     display: none;
   }
@@ -386,6 +386,54 @@ img {
 }
 .mv-form .btn-download .icon {
   font-size: 22px;
+}
+.f-tel {
+  display: flex;
+  flex-wrap: wrap;
+}
+.f-tel .first {
+  width: 100px;
+  margin-right: 10px;
+}
+.f-tel .first .f-select {
+  background: #ffe41a;
+  border-radius: 7px;
+  width: 100%;
+  padding: 10px;
+  color: #523b00;
+}
+.f-tel .last {
+  flex: 1;
+}
+.f-captcha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.f-captcha .first {
+  width: 49%;
+}
+.f-captcha .last {
+	width: 49%;
+	padding: 5px 40px 5px 15px;
+	background: #ffffff;
+	border-radius: 7px;
+	display: flex;
+  height: 39px;
+  position: relative;
+}
+.f-captcha .last .img {
+	max-height: 30px;
+	margin: 0 auto;
+}
+.f-captcha .last .icon-reload {
+  cursor: pointer;
+  color: #523b00;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1;
 }
 @media only screen and (max-width: 1024px) {
   .mv-form .f-ttl {

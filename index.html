@@ -33,11 +33,37 @@
           <form class="formWrap">
             <h2 class="f-ttl">NẠP RÚT TIỀN TRỰC TIẾP VỀ THẺ ATM TRONG 5-10 PHÚT</h2>
             <p class="f-txt">Tặng 2.000.000 + Thẻ Cào 50K</p>
-            <div class="f-row"><input type="text" class="f-input" placeholder="Họ và tên*"></div>
-            <div class="f-row"><input type="text" class="f-input" placeholder="Tên đăng nhập"></div>
+            <div class="f-row"><input type="text" class="f-input" placeholder="Tên người dùng" name="username"></div>
             <div class="f-row"><input type="text" class="f-input" placeholder="Mật khẩu"></div>
-            <div class="f-row"><input type="text" class="f-input" placeholder="Số điện thoại*"></div>
-            <div class="f-row"><input type="text" class="f-input" placeholder="Email*"></div>
+            <div class="f-row"><input type="text" class="f-input" placeholder="Xác nhận mật khẩu"></div>
+            <div class="f-row"><input type="text" class="f-input" placeholder="Tên thật"></div>
+            <div class="f-row"><input type="text" class="f-input" placeholder="Địa chỉ email"></div>
+            <div class="f-row">
+              <div class="f-tel">
+                <div class="first">
+                  <select class="f-select">
+                    <option value="84">+84</option>
+                    <option value="63">+63</option>
+                  </select>
+                </div>
+                <div class="last"><input type="text" class="f-input" placeholder="Điện thoại"></div>
+              </div>
+            </div>
+            <div class="f-row">
+              <div class="f-captcha">
+                <div class="first"><input type="text" class="f-input" placeholder="Mã xác nhận"></div>
+                <div class="last">
+                  <img class="img" src="imgs/captcha.png" alt="captcha">
+                  <span class="icon-reload"><svg class="icon"><use xlink:href="#icon-reload"></use></svg></span>
+                </div>
+              </div>
+            </div>
+            <div class="f-row">
+              <div class="f-check">
+                <input class="check" type="checkbox">
+                <label class="lbl">Tôi trên 18 tuổi và đồng ý với các điều khoản và chính sách bảo mật</label>
+              </div>
+            </div>
             <button class="page-btn btn-register" type="button">ĐĂNG KÝ</button>
           </form>
           <a href="#" class="page-btn btn-download"><svg class="icon"><use xlink:href="#icon-download"></use></svg>TẢI ỨNG DỤNG</a>
@@ -157,6 +183,21 @@
         </symbol>
         <symbol id="icon-close" viewBox="0 0 352 512">
           <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+        </symbol>
+        <symbol id="icon-reload" viewBox="0 0 512 512">
+          <path fill="currentColor" d="M370.72 133.28C339.458 104.008 298.888 87.962 255.848 88c-77.458.068-144.328 53.178-162.791 126.85-1.344 5.363-6.122 9.15-11.651 9.15H24.103c-7.498 0-13.194-6.807-11.807-14.176C33.933 94.924 134.813 8 256 8c66.448 0 126.791 26.136 171.315 68.685L463.03 40.97C478.149 25.851 504 36.559 504 57.941V192c0 13.255-10.745 24-24 24H345.941c-21.382 0-32.09-25.851-16.971-40.971l41.75-41.749zM32 296h134.059c21.382 0 32.09 25.851 16.971 40.971l-41.75 41.75c31.262 29.273 71.835 45.319 114.876 45.28 77.418-.07 144.315-53.144 162.787-126.849 1.344-5.363 6.122-9.15 11.651-9.15h57.304c7.498 0 13.194 6.807 11.807 14.176C478.067 417.076 377.187 504 256 504c-66.448 0-126.791-26.136-171.315-68.685L48.97 471.03C33.851 486.149 8 475.441 8 454.059V320c0-13.255 10.745-24 24-24z"></path>
+        </symbol>
+        <symbol id="icon-user" viewBox="0 0 448 512">
+          <path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>
+        </symbol>
+        <symbol id="icon-eye" viewBox="0 0 576 512">
+          <path fill="currentColor" d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"></path>
+        </symbol>
+        <symbol id="icon-lock" viewBox="0 0 448 512">
+          <path fill="currentColor" d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"></path>
+        </symbol>
+        <symbol id="icon-mail" viewBox="0 0 512 512">
+          <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
         </symbol>
       </defs>
     </svg>
