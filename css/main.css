@@ -3,6 +3,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  line-height: 1.4;
   -webkit-text-size-adjust: 100%;
   background-color: #fff;
 }
@@ -409,7 +410,73 @@ img {
   }
 }
 
-.sec_step {
+.sec_box {
+  padding: 90px 0;
+}
+.sec-title {
+  text-align: center;
+  font-size: 24px;
+  margin: 0 0 50px;
+  text-transform: uppercase;
+}
+.sec_box .list-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 50px;
+}
+.sec_box .list-box .box-item {
+  background: #a6e6ff;
+  color: #ff0000;
+  width: 33.33%;
+  padding: 30px 15px;
+  text-align: center;
+}
+.sec_box .list-box .box-item .it-lbl {
+  background: #ecfdb6;
+  border-radius: 10px;
+  color: #000000;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 0 0 15px;
+}
+.sec_box .list-box .box-item .it-txt {
+  font-size: 27px;
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
+}
+.sec_box .list-box .box-item .it-txt .large {
+  font-size: 200%;
+  line-height: 1;
+}
+.sec_box .list-box .box-item:nth-child(2n) {
+  background: #ecfdb6;
+  color: #0311ec;
+}
+.sec_box .list-box .box-item:nth-child(2n) .it-lbl{
+  background: #a6e6ff;
+}
+.sec_box .box-btn {
+  text-align: center;
+}
+.btn-style-01 {
+  width: 320px;
+  max-width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 30px;
+  color: #ffffff;
+  background: #0311ec;
+  padding: 15px 20px;
+  transition: all 0.3s ease-out;
+}
+.btn-style-01:hover {
+  background: #f4b802;
+}
+
+/* .sec_step {
   background: #000000;
   border-top: 2px solid #f0b500;
   padding: 50px 0;
@@ -500,7 +567,7 @@ img {
   .sec_step .steps .item .step-box .num {
     font-size: 26px;
   }
-}
+} */
 
 .sec_button {
   background: url('../imgs/bg01.png') no-repeat center center;
