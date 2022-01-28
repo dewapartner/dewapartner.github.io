@@ -358,6 +358,7 @@ img {
   font-weight: 800;
   font-size: 23px;
   font-style: italic;
+  margin: 0 0 15px;
   text-align: center;
 }
 .mv-form .f-txt {
@@ -382,7 +383,7 @@ img {
   font-size: 22px;
 }
 .mv-form .btn-register {
-  margin: 0 0 20px;
+  padding: 10px 15px;
 }
 .mv-form .btn-download .icon {
   font-size: 22px;
